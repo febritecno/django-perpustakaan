@@ -1,0 +1,18 @@
+{% extends 'base-karyawan.html' %}
+
+{% block content %}
+	<div class="col-md-6">
+	   <div class="card">
+     	<div class="header">
+             <h4 class="title">Grafik kehadiran Anda di bulan {{ bulan }} tahun {{ tahun }}</h4> 
+
+        </div>
+		  <div class="panel-body">
+					
+		  		<div id="morris-bar-chart"></div>
+				<div id="chart_data" style="display:none";>{{ chart_data }}</div>
+			
+		  </div>
+	   </div>
+	</div>
+{% endblock %}
